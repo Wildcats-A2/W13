@@ -18,18 +18,19 @@
 <div>
   <a href="#" id="back-to-top" class="back-to-top" style="display: inline;">Top</a>
   <div>
-    <img class="thumbnail" src="images/logos/logo.png">
-    <h1>WILDCATS PRESENTATION W13</h1>
-    <img class="logo" src="images/3D_Logo.png">
+    <a href="https://wildcats-a2.github.io/A3/" target="_blank" title="Wildcats: Head to A3">
+      <img class="thumbnail" src="images/logos/logo.png">
+    </a>
+      <img class="logo" src="images/3D_Logo.png">
   </div>
   <div>
     <article>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/zUGko94Xcsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
       </iframe>
     </article>
-    <article>
+    <article style="background: rgb(112,128,144); background: linear-gradient(180deg, rgba(112,128,144,1) 0%, rgba(112,128,144,0.5) 100%);">
+      <h1>WILDCATS PRESENTATION W13</h1>
       <h3>The WILDCATS are:</h3>
-      <p class="body">
         <ul>
           <li>Brayden Shalders S3781601</li>
           <li>Carisse Wu Pey Ann S3886764</li>
@@ -38,39 +39,36 @@
           <li>Harmony Kloppenburg S3658138</li>
           <li>Xavier Tan S3784659</li>
         </ul>
-      </p>
-      </a>
     </article>
   </div>
 </div>
+<script>
+  var link = document.getElementById("back-to-top");
+  var amountScrolled = 250;
 
-  <script>
-    var link = document.getElementById("back-to-top");
-    var amountScrolled = 250;
+  window.addEventListener('scroll', function(e) {
+      if ( window.pageYOffset > amountScrolled ) {
+          link.classList.add('show');
+      } else {
+          link.className = 'back-to-top';
+      }
+  });
+<!-- Scrolls to Top -->
+  link.addEventListener('click', function(e) {
+      e.preventDefault();
 
-    window.addEventListener('scroll', function(e) {
-        if ( window.pageYOffset > amountScrolled ) {
-            link.classList.add('show');
-        } else {
-            link.className = 'back-to-top';
-        }
-    });
-  <!-- Scrolls to Top -->
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
+      var distance = 0 - window.pageYOffset;
+      var increments = distance/(500/16);
+      function animateScroll() {
+          window.scrollBy(0, increments);
+          if (window.pageYOffset <= document.body.offsetTop) {
+              clearInterval(runAnimation);
+          }
+      };
+      // Loop the animation function
+      var runAnimation = setInterval(animateScroll, 16);
+  });
 
-        var distance = 0 - window.pageYOffset;
-        var increments = distance/(500/16);
-        function animateScroll() {
-            window.scrollBy(0, increments);
-            if (window.pageYOffset <= document.body.offsetTop) {
-                clearInterval(runAnimation);
-            }
-        };
-        // Loop the animation function
-        var runAnimation = setInterval(animateScroll, 16);
-    });
-
-  </script>
+</script>
 </body>
 </html>

@@ -8,7 +8,7 @@ body {
 }
 
 article {
-  width: 100%;
+  width: 100vw;
   height: auto;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -23,20 +23,10 @@ div {
   width:99vw;
   z-index: 0;
   overflow: hidden;
-  padding: 1px;
+  padding: 0%;
+  margin: 0%;
   text-align: center;
 }
-div.container_main {
-  display: flex;
-  flex-direction: column;
-  margin: 5px;
-  z-index: 0;
-  overflow: hidden;
-  padding: 1px;
-  text-align: center;
-  width: 95vw;
-}
-
 
 /* Back to top start */
 .back-to-top {
@@ -82,8 +72,7 @@ h1 {
   font-size: 7vh;
   padding: 0%;
   font-weight: bolder;
-  margin-left: 0%;
-  margin-bottom: 0%;
+  margin: 0%;
   letter-spacing: ;
   text-align: center;
 }
@@ -157,6 +146,19 @@ ul {
   padding-top: 0%;
   padding-left: 40%;
   padding-right: 30%;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 iframe {
