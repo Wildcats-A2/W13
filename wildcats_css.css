@@ -8,24 +8,23 @@ body {
 }
 
 article {
-
-  width: auto;
+  width: 100%;
   height: auto;
-  padding: 0%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   margin: 0%;
   border-bottom: 1px solid slategrey;
   box-shadow: 5px rgba(0,0,0,0.2);
   text-align: center;
 }
 
-/* DIV, Containers and Articles */
-
-div.container {
-  display: flex;
-  width:inherit;
+div {
+  display: block;
+  width:99vw;
   z-index: 0;
   overflow: hidden;
   padding: 1px;
+  text-align: center;
 }
 div.container_main {
   display: flex;
@@ -35,74 +34,7 @@ div.container_main {
   overflow: hidden;
   padding: 1px;
   text-align: center;
-  width: 80vw;
-}
-div.left {
-  width:20vw;
-  height: 100vh;
-  overflow: visible;
-  float: left;
-  z-index: 10;
-}
-div.right {
-  width: 80vw;
-  overflow: hidden;
-  display: flex;
-  margin: ;
-  z-index: 1;
-
-}
-div.title {
-  margin-top: 20px;
-  padding: 0%;
-}
-
-div.footer {
-  height: auto;
-  border-top: 1px solid grey;
-  background-color: black;
-  display: flex;
-}
-
-/* Article Divs */
-div.article1 {
-  width: 100%;
-  height: 20%;
-  order: 1;
-  float: right;
-}
-div.article2 {
-  width: 80%;
-  height: 20%;
-  order: 2;
-}
-div.article3 {
-  width: 80%;
-  height: 20%;
-  order: 3;
-}
-div.article4 {
-  width: 80%;
-  height: 20%;
-  order: 4;
-}
-
-div.article_wrapper {
-  padding: 10%;
-  display: block;
-}
-
-div.img {
-  width: 30%;
-  height: 100%;
-  justify-content: center;
-  padding-top: 0%;
-  margin-top: 0%;
-  margin-right: 5%;
-
-  float:left;
-  display: inline-block;
-  vertical-align: middle;
+  width: 95vw;
 }
 
 
@@ -141,88 +73,6 @@ a.back-to-top {
 .back-to-top.show {
   opacity: 1;
 }
-/* Back to top end */
-
-/* navigation */
-.navbar {
-  overflow: visible;
-  flex-direction: column;
-  box-shadow: 5px rgba(0,0,0,0.2);
-  z-index: 10;
-  text-align: left;
-  justify-content: space-around;
-  font-family: 'Open Sans', sans-serif;
-  min-width: 20vw;
-}
-
-.navbar a {
-  text-align: center;
-  float: left;
-  font-size: 1.5vw;
-  color: white;
-  text-align: left;
-  justify-content: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  box-shadow: 5px rgba(0,0,0,0.2);
-  min-width: 200px;
-  z-index: 10;
-}
-
-.dropdown {
-  float: left;
-  overflow: hidden;
-
-
-}
-
-.dropdown .dropbtn {
-  font-size: 1.5vw;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-}
-.dropbtn {
-  color: black;
-  width: 20vw;
-  text-align: left;
-}
-.navbar a:hover, .dropdown:hover {
-  background-color:;
-  color: mediumspringgreen;
-}
-
-.dropdown-content {
-  display: none;
-  position: ;
-  color: slategrey;
-  background-color: white;
-  min-width: 200px;
-  box-shadow: 0px 8px 16px 10px rgba(0,0,0,0.2);
-  z-index: 11;
-}
-
-.dropdown-content a {
-  float: none;
-  color: slategrey;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: ;
-  color: mediumspringgreen;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 
 /* Font Formatting */
 
@@ -230,21 +80,22 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   color: whitesmoke;
   font-size: 7vh;
-  padding-left: ;
+  padding: 0%;
   font-weight: bolder;
-  margin-left: auto;
-  margin-bottom: 5%;
-  letter-spacing: 2px;
+  margin-left: 0%;
+  margin-bottom: 0%;
+  letter-spacing: ;
+  text-align: center;
 }
 h2 {
   font-family: 'Open Sans', sans-serif;
   color: mediumspringgreen;
-  font-size: 3vh;
-  padding-left: ;
+  font-size: 6vh;
+  padding: 0%;
   font-weight: bolder;
-  margin-top: 2.5%;
-  margin-bottom: 2.5%;
-  letter-spacing: 2px;
+  margin: 0%;
+  letter-spacing: ;
+  text-align: center;
 }
 
 h3 {
@@ -258,38 +109,6 @@ h3 {
   letter-spacing: 2px;
 }
 
-h4 {
-  font-family: 'Open Sans', sans-serif;
-  color: whitesmoke;
-  font-size: 2vh;
-  font-weight: lighter;
-  letter-spacing: 2px;
-  margin-top: 2.5%;
-  margin-bottom: 2.5%;
-}
-
-p.heading {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 2em;
-  color: black;
-  margin-left: 5%;
-  text-align: left;
-  letter-spacing: 2px;
-  line-height: 1;
-  font-weight: 900;
-}
-
-p.subheading {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.5vw;
-  color: black;
-  font-weight: bold;
-  margin-left: 10%;
-  margin-right: 10%;
-  text-align: left;
-  text-justify: inter-word;
-  letter-spacing: 2px;
-}
 p.body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
@@ -304,50 +123,16 @@ p.body {
   justify-content: space-around;
 }
 
-/* IMG Formatting */
-img.logo {
-  max-width: 90%;
-}
-
-img.sub_article {
-  max-width: 70%;
-
-  object-fit: cover;
-  object-position: 100% 0;
-  padding-right: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  float: left;
-  justify-content:
-  display:inline-block;
-  vertical-align: middle;
-}
-
-img.article {
-  max-width: 100%;
-
-  object-fit: cover;
-  object-position: 100% 0;
-  padding-right: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  float: left;
-  justify-content:
-  display:inline-block;
-  vertical-align: middle;
-}
-
-img.centre {
-  width: 80%;
-  display: block;
-  padding: 30px;
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 img.thumbnail{
-  max-width: 80%;
+  max-width: 100px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+img.logo {
+  max-width: 30%;
+  padding-top: 2%;
 }
 
 a {
@@ -370,41 +155,6 @@ ul {
   margin-right: 0%;
   text-align: left;
   padding-top: 0%;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-ol {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: ;
-  font-size: 1em;
-  line-height: 1.5;
-  letter-spacing: 2px;
-  color: black;
-  margin-left: 0%;
-  margin-right: 0%;
-  text-align: left;
-  padding-left: 5%;
-  padding-right: 0%;
-}
-
-table {
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding: 0%;
-}
-
-td {
-  text-align: left;
-  vertical-align: top;
-  padding-top: 1%;
-  border-bottom: 1px solid slategray;
-  border-left: 0px;
-  border-right: 0px;
-}
-
-th {
-  text-align: left;
-  vertical-align: top;
+  padding-left: 40%;
+  padding-right: 30%;
 }
